@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let a =6;
+    let result = ++a + a + a++ + ++a + a
+    // giải thích
+    // +aa là toán tử tăng giá trị  trước khi sử dụng biểu thức 
+    // a++ là toán tử tăng giá trị sau khi sử dụng biểu thức 
+    // ++a giá trị a =6, toán tử ++a sẽ tăng lên 1 và trả về giá trị mới là 7
+    //  hiện tại a là 7
+    // a++ giá trị a = 7, toán tử a++  sẽ sử dụng giá trị hiện tại là 7 và sau đó tăng giá trị lên 1 
+    // ++a giá trị hiện tại của a là 8. Sử dụng toán tử ++a sẽ tăng giá trị của a lên 1 và trả về giá trị mới là 9
+    // giá trị hiện tại của a là 9.
+    // tính toán giá trị của biểu thức
+    result = ++a + a + a++ + ++a +a;
+    result = 7   + 7 + 7   + 9    +9
+    result = 39;
+</script>
+</html>
